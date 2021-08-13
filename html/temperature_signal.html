@@ -29,12 +29,12 @@
 </script>
 </head>
 <body>
-        <div id="3f1248d7f1f44baab955d321bfd1e91f" style="width:900px;height:600px;"></div>
-        <div id="f61553b4cd4741718fe9cc971f6304dd" style="width:900px;height:600px;"></div>
-        <div id="36ec75cdae914159bf899106a83a1b33" style="width:800px;height:600px;"></div>
+        <div id="dbe49c9702e04525a26745850259d217" style="width:900px;height:600px;"></div>
+        <div id="4d48c01d0e57479d8c538095ceff4165" style="width:900px;height:600px;"></div>
+        <div id="718a418a1d2447eea503488cb782c8ec" style="width:800px;height:600px;"></div>
     <script type="text/javascript">
 
-var myChart_3f1248d7f1f44baab955d321bfd1e91f = echarts.init(document.getElementById('3f1248d7f1f44baab955d321bfd1e91f'), 'light', {renderer: 'canvas'});
+var myChart_dbe49c9702e04525a26745850259d217 = echarts.init(document.getElementById('dbe49c9702e04525a26745850259d217'), 'light', {renderer: 'canvas'});
 function value_formatter(value) {
     value = (value.toString() + "").split(".");
     ((value.length < 2) && value.push("0"));
@@ -42,105 +42,85 @@ function value_formatter(value) {
     return (((value[0] + ".") + value[1]) + "\u00b0C");
 }
 
-var option_3f1248d7f1f44baab955d321bfd1e91f = {
-    "tooltip": {
-        "formatter": "{b} : {c}\u00b0C"
-    },
+var option_dbe49c9702e04525a26745850259d217 = {
     "graphic": [
         {
+            "z": 10,
+            "id": "logo",
+            "top": 20,
             "bounding": "raw",
             "right": 205,
             "draggable": true,
-            "style": {
-                "width": 90,
-                "opacity": 1,
-                "image": "image/logo.jpg",
-                "height": 90
-            },
-            "z": 10,
             "type": "image",
-            "id": "logo",
-            "top": 20,
+            "style": {
+                "height": 90,
+                "image": "image/logo.jpg",
+                "width": 90,
+                "opacity": 1
+            },
             "origin": [
                 75,
                 75
             ]
         },
         {
+            "z": 10,
+            "id": "barcode",
+            "top": 15,
             "bounding": "raw",
             "right": 320,
             "draggable": true,
-            "style": {
-                "width": 100,
-                "opacity": 1,
-                "image": "image/barcode.jpg",
-                "height": 100
-            },
-            "z": 10,
             "type": "image",
-            "id": "barcode",
-            "top": 15,
+            "style": {
+                "height": 100,
+                "image": "image/barcode.jpg",
+                "width": 100,
+                "opacity": 1
+            },
             "origin": [
                 75,
                 75
             ]
         }
     ],
-    "series_id": 2345101,
-    "toolbox": {
-        "show": false
+    "tooltip": {
+        "formatter": "{b} : {c}\u00b0C"
     },
+    "animation": true,
     "series": [
         {
-            "radius": "35%",
             "axisLabel": {
                 "show": false
             },
-            "axisTick": {
-                "length": 8,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
-            },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
-            "splitLine": {
-                "length": 15,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
+            "name": "\u4e1a\u52a1\u6307\u6807",
             "pointer": {
                 "width": 5
             },
-            "center": [
-                "20%",
-                "30%"
-            ],
-            "title": {
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
                 "fontSize": 16
             },
             "data": [
                 {
-                    "value": 57.5,
+                    "value": 58.7,
                     "name": "\u4e0a\u8bc1\u6307\u6570\n - +"
                 }
-            ]
-        },
-        {
+            ],
+            "title": {
+                "fontSize": 16
+            },
             "radius": "35%",
-            "axisLabel": {
-                "show": false
+            "splitLine": {
+                "length": 15,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "axisTick": {
                 "length": 8,
@@ -148,45 +128,45 @@ var option_3f1248d7f1f44baab955d321bfd1e91f = {
                     "color": "auto"
                 }
             },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
+            "center": [
+                "20%",
+                "30%"
+            ],
+            "type": "gauge"
+        },
+        {
+            "axisLabel": {
+                "show": false
             },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
-            "splitLine": {
-                "length": 15,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
+            "name": "\u4e1a\u52a1\u6307\u6807",
             "pointer": {
                 "width": 5
             },
-            "center": [
-                "45%",
-                "30%"
-            ],
-            "title": {
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
                 "fontSize": 16
             },
             "data": [
                 {
-                    "value": 93.7,
+                    "value": 93.6,
                     "name": "\u6caa\u6df1300\n - -"
                 }
-            ]
-        },
-        {
+            ],
+            "title": {
+                "fontSize": 16
+            },
             "radius": "35%",
-            "axisLabel": {
-                "show": false
+            "splitLine": {
+                "length": 15,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "axisTick": {
                 "length": 8,
@@ -194,91 +174,91 @@ var option_3f1248d7f1f44baab955d321bfd1e91f = {
                     "color": "auto"
                 }
             },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
+            "center": [
+                "45%",
+                "30%"
+            ],
+            "type": "gauge"
+        },
+        {
+            "axisLabel": {
+                "show": false
             },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
+            "name": "\u4e1a\u52a1\u6307\u6807",
+            "pointer": {
+                "width": 5
+            },
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
+                "fontSize": 16
+            },
+            "data": [
+                {
+                    "value": 96.8,
+                    "name": "\u6052\u751f\u6307\u6570\n - -"
+                }
+            ],
+            "title": {
+                "fontSize": 16
+            },
+            "radius": "35%",
             "splitLine": {
                 "length": 15,
                 "lineStyle": {
                     "color": "auto"
                 }
             },
-            "pointer": {
-                "width": 5
+            "axisTick": {
+                "length": 8,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "center": [
                 "70%",
                 "30%"
             ],
-            "title": {
-                "fontSize": 16
-            },
-            "data": [
-                {
-                    "value": 96.3,
-                    "name": "\u6052\u751f\u6307\u6570\n - -"
-                }
-            ]
+            "type": "gauge"
         },
         {
-            "radius": "35%",
             "axisLabel": {
                 "show": false
             },
-            "axisTick": {
-                "length": 8,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
-            },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
-            "splitLine": {
-                "length": 15,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
+            "name": "\u4e1a\u52a1\u6307\u6807",
             "pointer": {
                 "width": 5
             },
-            "center": [
-                "20%",
-                "60%"
-            ],
-            "title": {
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
                 "fontSize": 16
             },
             "data": [
                 {
-                    "value": 55.5,
+                    "value": 56.5,
                     "name": "\u4e2d\u8bc1\u5168\u6307\n + +"
                 }
-            ]
-        },
-        {
+            ],
+            "title": {
+                "fontSize": 16
+            },
             "radius": "35%",
-            "axisLabel": {
-                "show": false
+            "splitLine": {
+                "length": 15,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "axisTick": {
                 "length": 8,
@@ -286,183 +266,229 @@ var option_3f1248d7f1f44baab955d321bfd1e91f = {
                     "color": "auto"
                 }
             },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
+            "center": [
+                "20%",
+                "60%"
+            ],
+            "type": "gauge"
+        },
+        {
+            "axisLabel": {
+                "show": false
             },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
+            "name": "\u4e1a\u52a1\u6307\u6807",
+            "pointer": {
+                "width": 5
+            },
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
+                "fontSize": 16
+            },
+            "data": [
+                {
+                    "value": 93.4,
+                    "name": "\u521b\u4e1a\u677f\u6307\n + +"
+                }
+            ],
+            "title": {
+                "fontSize": 16
+            },
+            "radius": "35%",
             "splitLine": {
                 "length": 15,
                 "lineStyle": {
                     "color": "auto"
                 }
             },
-            "pointer": {
-                "width": 5
+            "axisTick": {
+                "length": 8,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "center": [
                 "45%",
                 "60%"
             ],
-            "title": {
-                "fontSize": 16
-            },
-            "data": [
-                {
-                    "value": 92.4,
-                    "name": "\u521b\u4e1a\u677f\u6307\n + +"
-                }
-            ]
+            "type": "gauge"
         },
         {
-            "radius": "35%",
             "axisLabel": {
                 "show": false
             },
-            "axisTick": {
-                "length": 8,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
-            },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
+            "name": "\u4e1a\u52a1\u6307\u6807",
+            "pointer": {
+                "width": 5
+            },
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
+                "fontSize": 16
+            },
+            "data": [
+                {
+                    "value": 53.2,
+                    "name": "\u4e2d\u5c0f\u677f\u6307\n + +"
+                }
+            ],
+            "title": {
+                "fontSize": 16
+            },
+            "radius": "35%",
             "splitLine": {
                 "length": 15,
                 "lineStyle": {
                     "color": "auto"
                 }
             },
-            "pointer": {
-                "width": 5
+            "axisTick": {
+                "length": 8,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "center": [
                 "70%",
                 "60%"
             ],
-            "title": {
-                "fontSize": 16
-            },
-            "data": [
-                {
-                    "value": 52.5,
-                    "name": "\u4e2d\u5c0f\u677f\u6307\n + +"
-                }
-            ]
+            "type": "gauge"
         },
         {
-            "radius": "35%",
             "axisLabel": {
                 "show": false
             },
-            "axisTick": {
-                "length": 8,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
-            },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
+            "name": "\u4e1a\u52a1\u6307\u6807",
+            "pointer": {
+                "width": 5
+            },
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
+                "fontSize": 16
+            },
+            "data": [
+                {
+                    "value": 98.9,
+                    "name": " \u6052\u751f\u56fd\u4f01\n - -"
+                }
+            ],
+            "title": {
+                "fontSize": 16
+            },
+            "radius": "35%",
             "splitLine": {
                 "length": 15,
                 "lineStyle": {
                     "color": "auto"
                 }
             },
-            "pointer": {
-                "width": 5
+            "axisTick": {
+                "length": 8,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "center": [
                 "20%",
                 "90%"
             ],
-            "title": {
-                "fontSize": 16
-            },
-            "data": [
-                {
-                    "value": 99.1,
-                    "name": " \u6052\u751f\u56fd\u4f01\n - -"
-                }
-            ]
+            "type": "gauge"
         },
         {
-            "radius": "35%",
             "axisLabel": {
                 "show": false
             },
-            "axisTick": {
-                "length": 8,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
-            },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
+            "name": "\u4e1a\u52a1\u6307\u6807",
+            "pointer": {
+                "width": 5
+            },
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
+                "fontSize": 16
+            },
+            "data": [
+                {
+                    "value": 92.7,
+                    "name": "\u4e0a\u8bc150\n - -"
+                }
+            ],
+            "title": {
+                "fontSize": 16
+            },
+            "radius": "35%",
             "splitLine": {
                 "length": 15,
                 "lineStyle": {
                     "color": "auto"
                 }
             },
-            "pointer": {
-                "width": 5
+            "axisTick": {
+                "length": 8,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "center": [
                 "45%",
                 "90%"
             ],
-            "title": {
+            "type": "gauge"
+        },
+        {
+            "axisLabel": {
+                "show": false
+            },
+            "axisLine": {
+                "lineStyle": {
+                    "width": 8
+                }
+            },
+            "name": "\u4e1a\u52a1\u6307\u6807",
+            "pointer": {
+                "width": 5
+            },
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
                 "fontSize": 16
             },
             "data": [
                 {
-                    "value": 93.3,
-                    "name": "\u4e0a\u8bc150\n - -"
+                    "value": 30.7,
+                    "name": "\u4e2d\u8bc1500\n + +"
                 }
-            ]
-        },
-        {
+            ],
+            "title": {
+                "fontSize": 16
+            },
             "radius": "35%",
-            "axisLabel": {
-                "show": false
+            "splitLine": {
+                "length": 15,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "axisTick": {
                 "length": 8,
@@ -470,58 +496,32 @@ var option_3f1248d7f1f44baab955d321bfd1e91f = {
                     "color": "auto"
                 }
             },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
-            },
-            "name": "\u4e1a\u52a1\u6307\u6807",
-            "axisLine": {
-                "lineStyle": {
-                    "width": 8
-                }
-            },
-            "splitLine": {
-                "length": 15,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
-            "pointer": {
-                "width": 5
-            },
             "center": [
                 "70%",
                 "90%"
             ],
-            "title": {
-                "fontSize": 16
-            },
-            "data": [
-                {
-                    "value": 30.4,
-                    "name": "\u4e2d\u8bc1500\n + +"
-                }
-            ]
+            "type": "gauge"
         }
     ],
+    "series_id": 7464776,
+    "title": {
+        "top": "5%",
+        "text": "\u516c\u4f17\u53f7\uff1a\u91d1\u51e4\u94b1\u6f6e\u7b56\u7565 2021-08-12",
+        "left": "15%"
+    },
     "legend": [
         {
             "data": []
         }
     ],
-    "animation": true,
-    "title": {
-        "text": "\u516c\u4f17\u53f7\uff1a\u91d1\u51e4\u94b1\u6f6e\u7b56\u7565 2021-08-11",
-        "top": "5%",
-        "left": "15%"
+    "toolbox": {
+        "show": false
     }
 };
-myChart_3f1248d7f1f44baab955d321bfd1e91f.setOption(option_3f1248d7f1f44baab955d321bfd1e91f);
+myChart_dbe49c9702e04525a26745850259d217.setOption(option_dbe49c9702e04525a26745850259d217);
 
 
-var myChart_f61553b4cd4741718fe9cc971f6304dd = echarts.init(document.getElementById('f61553b4cd4741718fe9cc971f6304dd'), 'light', {renderer: 'canvas'});
+var myChart_4d48c01d0e57479d8c538095ceff4165 = echarts.init(document.getElementById('4d48c01d0e57479d8c538095ceff4165'), 'light', {renderer: 'canvas'});
 function value_formatter(value) {
     value = (value.toString() + "").split(".");
     ((value.length < 2) && value.push("0"));
@@ -529,105 +529,85 @@ function value_formatter(value) {
     return (((value[0] + ".") + value[1]) + "\u00b0C");
 }
 
-var option_f61553b4cd4741718fe9cc971f6304dd = {
-    "tooltip": {
-        "formatter": "{b} : {c}\u00b0C"
-    },
+var option_4d48c01d0e57479d8c538095ceff4165 = {
     "graphic": [
         {
+            "z": 10,
+            "id": "logo",
+            "top": 20,
             "bounding": "raw",
             "right": 205,
             "draggable": true,
-            "style": {
-                "width": 90,
-                "opacity": 1,
-                "image": "image/logo.jpg",
-                "height": 90
-            },
-            "z": 10,
             "type": "image",
-            "id": "logo",
-            "top": 20,
+            "style": {
+                "height": 90,
+                "image": "image/logo.jpg",
+                "width": 90,
+                "opacity": 1
+            },
             "origin": [
                 75,
                 75
             ]
         },
         {
+            "z": 10,
+            "id": "barcode",
+            "top": 15,
             "bounding": "raw",
             "right": 320,
             "draggable": true,
-            "style": {
-                "width": 100,
-                "opacity": 1,
-                "image": "image/barcode.jpg",
-                "height": 100
-            },
-            "z": 10,
             "type": "image",
-            "id": "barcode",
-            "top": 15,
+            "style": {
+                "height": 100,
+                "image": "image/barcode.jpg",
+                "width": 100,
+                "opacity": 1
+            },
             "origin": [
                 75,
                 75
             ]
         }
     ],
-    "series_id": 3925795,
-    "toolbox": {
-        "show": false
+    "tooltip": {
+        "formatter": "{b} : {c}\u00b0C"
     },
+    "animation": true,
     "series": [
         {
-            "radius": "35%",
             "axisLabel": {
                 "show": false
             },
-            "axisTick": {
-                "length": 8,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
-            },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
-            "splitLine": {
-                "length": 15,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
+            "name": "\u4e1a\u52a1\u6307\u6807",
             "pointer": {
                 "width": 5
             },
-            "center": [
-                "20%",
-                "30%"
-            ],
-            "title": {
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
                 "fontSize": 16
             },
             "data": [
                 {
-                    "value": 86.4,
+                    "value": 84.6,
                     "name": "\u4e2d\u8bc1\u6d88\u8d39\n - -"
                 }
-            ]
-        },
-        {
+            ],
+            "title": {
+                "fontSize": 16
+            },
             "radius": "35%",
-            "axisLabel": {
-                "show": false
+            "splitLine": {
+                "length": 15,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "axisTick": {
                 "length": 8,
@@ -635,45 +615,45 @@ var option_f61553b4cd4741718fe9cc971f6304dd = {
                     "color": "auto"
                 }
             },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
+            "center": [
+                "20%",
+                "30%"
+            ],
+            "type": "gauge"
+        },
+        {
+            "axisLabel": {
+                "show": false
             },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
-            "splitLine": {
-                "length": 15,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
+            "name": "\u4e1a\u52a1\u6307\u6807",
             "pointer": {
                 "width": 5
             },
-            "center": [
-                "45%",
-                "30%"
-            ],
-            "title": {
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
                 "fontSize": 16
             },
             "data": [
                 {
-                    "value": 17.6,
+                    "value": 17.0,
                     "name": "180\u91d1\u878d\n - -"
                 }
-            ]
-        },
-        {
+            ],
+            "title": {
+                "fontSize": 16
+            },
             "radius": "35%",
-            "axisLabel": {
-                "show": false
+            "splitLine": {
+                "length": 15,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "axisTick": {
                 "length": 8,
@@ -681,91 +661,91 @@ var option_f61553b4cd4741718fe9cc971f6304dd = {
                     "color": "auto"
                 }
             },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
+            "center": [
+                "45%",
+                "30%"
+            ],
+            "type": "gauge"
+        },
+        {
+            "axisLabel": {
+                "show": false
             },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
+            "name": "\u4e1a\u52a1\u6307\u6807",
+            "pointer": {
+                "width": 5
+            },
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
+                "fontSize": 16
+            },
+            "data": [
+                {
+                    "value": 35.9,
+                    "name": "\u5168\u6307\u533b\u836f\n - -"
+                }
+            ],
+            "title": {
+                "fontSize": 16
+            },
+            "radius": "35%",
             "splitLine": {
                 "length": 15,
                 "lineStyle": {
                     "color": "auto"
                 }
             },
-            "pointer": {
-                "width": 5
+            "axisTick": {
+                "length": 8,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "center": [
                 "70%",
                 "30%"
             ],
-            "title": {
-                "fontSize": 16
-            },
-            "data": [
-                {
-                    "value": 35.1,
-                    "name": "\u5168\u6307\u533b\u836f\n - -"
-                }
-            ]
+            "type": "gauge"
         },
         {
-            "radius": "35%",
             "axisLabel": {
                 "show": false
             },
-            "axisTick": {
-                "length": 8,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
-            },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
-            "splitLine": {
-                "length": 15,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
+            "name": "\u4e1a\u52a1\u6307\u6807",
             "pointer": {
                 "width": 5
             },
-            "center": [
-                "20%",
-                "60%"
-            ],
-            "title": {
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
                 "fontSize": 16
             },
             "data": [
                 {
-                    "value": 84.3,
+                    "value": 83.0,
                     "name": "\u4e2d\u8bc1\u519b\u5de5\n + +"
                 }
-            ]
-        },
-        {
+            ],
+            "title": {
+                "fontSize": 16
+            },
             "radius": "35%",
-            "axisLabel": {
-                "show": false
+            "splitLine": {
+                "length": 15,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "axisTick": {
                 "length": 8,
@@ -773,183 +753,229 @@ var option_f61553b4cd4741718fe9cc971f6304dd = {
                     "color": "auto"
                 }
             },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
+            "center": [
+                "20%",
+                "60%"
+            ],
+            "type": "gauge"
+        },
+        {
+            "axisLabel": {
+                "show": false
             },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
+            "name": "\u4e1a\u52a1\u6307\u6807",
+            "pointer": {
+                "width": 5
+            },
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
+                "fontSize": 16
+            },
+            "data": [
+                {
+                    "value": 89.2,
+                    "name": "\u4e2d\u8bc1\u73af\u4fdd\n + +"
+                }
+            ],
+            "title": {
+                "fontSize": 16
+            },
+            "radius": "35%",
             "splitLine": {
                 "length": 15,
                 "lineStyle": {
                     "color": "auto"
                 }
             },
-            "pointer": {
-                "width": 5
+            "axisTick": {
+                "length": 8,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "center": [
                 "45%",
                 "60%"
             ],
-            "title": {
-                "fontSize": 16
-            },
-            "data": [
-                {
-                    "value": 88.1,
-                    "name": "\u4e2d\u8bc1\u73af\u4fdd\n + +"
-                }
-            ]
+            "type": "gauge"
         },
         {
-            "radius": "35%",
             "axisLabel": {
                 "show": false
             },
-            "axisTick": {
-                "length": 8,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
-            },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
+            "name": "\u4e1a\u52a1\u6307\u6807",
+            "pointer": {
+                "width": 5
+            },
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
+                "fontSize": 16
+            },
+            "data": [
+                {
+                    "value": 2.2,
+                    "name": "\u4e2d\u8bc1\u94f6\u884c\n - -"
+                }
+            ],
+            "title": {
+                "fontSize": 16
+            },
+            "radius": "35%",
             "splitLine": {
                 "length": 15,
                 "lineStyle": {
                     "color": "auto"
                 }
             },
-            "pointer": {
-                "width": 5
+            "axisTick": {
+                "length": 8,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "center": [
                 "70%",
                 "60%"
             ],
-            "title": {
-                "fontSize": 16
-            },
-            "data": [
-                {
-                    "value": 2.3,
-                    "name": "\u4e2d\u8bc1\u94f6\u884c\n - -"
-                }
-            ]
+            "type": "gauge"
         },
         {
-            "radius": "35%",
             "axisLabel": {
                 "show": false
             },
-            "axisTick": {
-                "length": 8,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
-            },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
+            "name": "\u4e1a\u52a1\u6307\u6807",
+            "pointer": {
+                "width": 5
+            },
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
+                "fontSize": 16
+            },
+            "data": [
+                {
+                    "value": 8.4,
+                    "name": "\u4e2d\u8bc1\u4f20\u5a92\n - -"
+                }
+            ],
+            "title": {
+                "fontSize": 16
+            },
+            "radius": "35%",
             "splitLine": {
                 "length": 15,
                 "lineStyle": {
                     "color": "auto"
                 }
             },
-            "pointer": {
-                "width": 5
+            "axisTick": {
+                "length": 8,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "center": [
                 "20%",
                 "90%"
             ],
-            "title": {
-                "fontSize": 16
-            },
-            "data": [
-                {
-                    "value": 9.2,
-                    "name": "\u4e2d\u8bc1\u4f20\u5a92\n - -"
-                }
-            ]
+            "type": "gauge"
         },
         {
-            "radius": "35%",
             "axisLabel": {
                 "show": false
             },
-            "axisTick": {
-                "length": 8,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
-            },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
+            "name": "\u4e1a\u52a1\u6307\u6807",
+            "pointer": {
+                "width": 5
+            },
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
+                "fontSize": 16
+            },
+            "data": [
+                {
+                    "value": 51.6,
+                    "name": "\u5168\u6307\u4fe1\u606f\n + +"
+                }
+            ],
+            "title": {
+                "fontSize": 16
+            },
+            "radius": "35%",
             "splitLine": {
                 "length": 15,
                 "lineStyle": {
                     "color": "auto"
                 }
             },
-            "pointer": {
-                "width": 5
+            "axisTick": {
+                "length": 8,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "center": [
                 "45%",
                 "90%"
             ],
-            "title": {
+            "type": "gauge"
+        },
+        {
+            "axisLabel": {
+                "show": false
+            },
+            "axisLine": {
+                "lineStyle": {
+                    "width": 8
+                }
+            },
+            "name": "\u4e1a\u52a1\u6307\u6807",
+            "pointer": {
+                "width": 5
+            },
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
                 "fontSize": 16
             },
             "data": [
                 {
-                    "value": 51.5,
-                    "name": "\u5168\u6307\u4fe1\u606f\n + +"
+                    "value": 6.0,
+                    "name": "\u7ea2\u5229\u6307\u6570\n - B2"
                 }
-            ]
-        },
-        {
+            ],
+            "title": {
+                "fontSize": 16
+            },
             "radius": "35%",
-            "axisLabel": {
-                "show": false
+            "splitLine": {
+                "length": 15,
+                "lineStyle": {
+                    "color": "auto"
+                }
             },
             "axisTick": {
                 "length": 8,
@@ -957,58 +983,32 @@ var option_f61553b4cd4741718fe9cc971f6304dd = {
                     "color": "auto"
                 }
             },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 16,
-                "formatter": value_formatter
-            },
-            "name": "\u4e1a\u52a1\u6307\u6807",
-            "axisLine": {
-                "lineStyle": {
-                    "width": 8
-                }
-            },
-            "splitLine": {
-                "length": 15,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
-            "pointer": {
-                "width": 5
-            },
             "center": [
                 "70%",
                 "90%"
             ],
-            "title": {
-                "fontSize": 16
-            },
-            "data": [
-                {
-                    "value": 4.6,
-                    "name": "\u7ea2\u5229\u6307\u6570\n - -"
-                }
-            ]
+            "type": "gauge"
         }
     ],
+    "series_id": 1057481,
+    "title": {
+        "top": "5%",
+        "text": "\u516c\u4f17\u53f7\uff1a\u91d1\u51e4\u94b1\u6f6e\u7b56\u7565 2021-08-12",
+        "left": "15%"
+    },
     "legend": [
         {
             "data": []
         }
     ],
-    "animation": true,
-    "title": {
-        "text": "\u516c\u4f17\u53f7\uff1a\u91d1\u51e4\u94b1\u6f6e\u7b56\u7565 2021-08-11",
-        "top": "5%",
-        "left": "15%"
+    "toolbox": {
+        "show": false
     }
 };
-myChart_f61553b4cd4741718fe9cc971f6304dd.setOption(option_f61553b4cd4741718fe9cc971f6304dd);
+myChart_4d48c01d0e57479d8c538095ceff4165.setOption(option_4d48c01d0e57479d8c538095ceff4165);
 
 
-var myChart_36ec75cdae914159bf899106a83a1b33 = echarts.init(document.getElementById('36ec75cdae914159bf899106a83a1b33'), 'light', {renderer: 'canvas'});
+var myChart_718a418a1d2447eea503488cb782c8ec = echarts.init(document.getElementById('718a418a1d2447eea503488cb782c8ec'), 'light', {renderer: 'canvas'});
 function value_formatter(value) {
     value = (value.toString() + "").split(".");
     ((value.length < 2) && value.push("0"));
@@ -1016,121 +1016,121 @@ function value_formatter(value) {
     return (((value[0] + ".") + value[1]) + "\u00b0C");
 }
 
-var option_36ec75cdae914159bf899106a83a1b33 = {
-    "tooltip": {
-        "formatter": "{b} : {c}\u00b0C"
-    },
+var option_718a418a1d2447eea503488cb782c8ec = {
     "graphic": [
         {
+            "z": 10,
+            "id": "barcode",
+            "top": 230,
             "bounding": "raw",
             "right": 350,
             "draggable": true,
-            "style": {
-                "width": 100,
-                "opacity": 1,
-                "image": "image/barcode.jpg",
-                "height": 100
-            },
-            "z": 10,
             "type": "image",
-            "id": "barcode",
-            "top": 230,
+            "style": {
+                "height": 100,
+                "image": "image/barcode.jpg",
+                "width": 100,
+                "opacity": 1
+            },
             "origin": [
                 75,
                 75
             ]
         }
     ],
-    "series_id": 3721540,
-    "toolbox": {
-        "show": false
+    "tooltip": {
+        "formatter": "{b} : {c}\u00b0C"
     },
+    "animation": true,
     "series": [
         {
-            "axisLabel": {
-                "show": false
-            },
-            "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 20,
-                "formatter": value_formatter
-            },
             "title": {
                 "fontSize": 20
             },
-            "data": [
-                {
-                    "value": 23.0,
-                    "name": "\u5238\u5546\u6e29\u5ea6\n + +"
-                }
-            ],
-            "name": "\u4e1a\u52a1\u6307\u6807"
-        },
-        {
-            "radius": "35%",
             "axisLabel": {
                 "show": false
             },
-            "axisTick": {
-                "length": 8,
-                "lineStyle": {
-                    "color": "auto"
-                }
+            "name": "\u4e1a\u52a1\u6307\u6807",
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
+                "fontSize": 20
             },
             "type": "gauge",
-            "detail": {
-                "show": true,
-                "fontSize": 20,
-                "formatter": value_formatter
+            "data": [
+                {
+                    "value": 23.0,
+                    "name": "\u5238\u5546\u6e29\u5ea6\n S1 +"
+                }
+            ]
+        },
+        {
+            "axisLabel": {
+                "show": false
             },
-            "name": "\u4e1a\u52a1\u6307\u6807",
             "axisLine": {
                 "lineStyle": {
                     "width": 8
                 }
             },
-            "splitLine": {
-                "length": 15,
-                "lineStyle": {
-                    "color": "auto"
-                }
-            },
+            "name": "\u4e1a\u52a1\u6307\u6807",
             "pointer": {
                 "width": 5
             },
-            "center": [
-                "50%",
-                "85%"
-            ],
-            "title": {
-                "fontSize": 20,
-                "offsetCenter": [
-                    0,
-                    "-30%"
-                ]
+            "detail": {
+                "formatter": value_formatter,
+                "show": true,
+                "fontSize": 20
             },
             "data": [
                 {
                     "value": 33.0,
                     "name": "\u5238\u5546\u6e7f\u5ea6"
                 }
-            ]
+            ],
+            "title": {
+                "offsetCenter": [
+                    0,
+                    "-30%"
+                ],
+                "fontSize": 20
+            },
+            "radius": "35%",
+            "splitLine": {
+                "length": 15,
+                "lineStyle": {
+                    "color": "auto"
+                }
+            },
+            "axisTick": {
+                "length": 8,
+                "lineStyle": {
+                    "color": "auto"
+                }
+            },
+            "center": [
+                "50%",
+                "85%"
+            ],
+            "type": "gauge"
         }
     ],
+    "series_id": 4151475,
+    "title": {
+        "top": "7%",
+        "text": "\u516c\u4f17\u53f7\uff1a\u91d1\u51e4\u94b1\u6f6e\u7b56\u7565 2021-08-12",
+        "left": "15%"
+    },
     "legend": [
         {
             "data": []
         }
     ],
-    "animation": true,
-    "title": {
-        "text": "\u516c\u4f17\u53f7\uff1a\u91d1\u51e4\u94b1\u6f6e\u7b56\u7565 2021-08-11",
-        "top": "7%",
-        "left": "15%"
+    "toolbox": {
+        "show": false
     }
 };
-myChart_36ec75cdae914159bf899106a83a1b33.setOption(option_36ec75cdae914159bf899106a83a1b33);
+myChart_718a418a1d2447eea503488cb782c8ec.setOption(option_718a418a1d2447eea503488cb782c8ec);
 
 </script>
 </body>
