@@ -11,13 +11,82 @@
 <div style="width:1200px;height:40px;margin: auto;">
 	<h3 style="text-align: center;">金凤钱潮策略（公众号：jinfengQC）周期框架1- 温度曲线图<h3>
 </div>
-<div id="e500c9a00bf1436bbb3de5c04e6eca9d" style="width:1200px;height:400px;"></div>
+<div id="9de0111156544bdda90aabd5b346068a" style="width:1200px;height:400px;"></div>
 <script type="text/javascript">
 
-var myChart_e500c9a00bf1436bbb3de5c04e6eca9d = echarts.init(document.getElementById('e500c9a00bf1436bbb3de5c04e6eca9d'), 'light', {renderer: 'canvas'});
+var myChart_9de0111156544bdda90aabd5b346068a = echarts.init(document.getElementById('9de0111156544bdda90aabd5b346068a'), 'light', {renderer: 'canvas'});
 
-var option_e500c9a00bf1436bbb3de5c04e6eca9d = {
+var option_9de0111156544bdda90aabd5b346068a = {
+    "grid": {
+        "right": "10%",
+        "bottom": "15%",
+        "left": "10%"
+    },
+    "tooltip": {
+        "trigger": "axis"
+    },
+    "legend": {
+        "data": [
+            "\u6536\u76d8\u70b9\u4f4d",
+            "\u7edd\u5bf9\u6e29\u5ea6",
+            "\u76f8\u5bf9\u6e29\u5ea6",
+            "\u5e73\u5747\u6e29\u5ea6"
+        ]
+    },
+    "title": {
+        "textAlign": "center",
+        "text": "\u8bc1\u5238\u516c\u53f8(399975)",
+        "left": 200,
+        "top": 10
+    },
+    "dataZoom": [
+        {
+            "end": 100,
+            "start": 90,
+            "type": "inside"
+        },
+        {
+            "end": 100,
+            "y": "90%",
+            "show": true,
+            "type": "slider",
+            "start": 90
+        }
+    ],
+    "yAxis": [
+        {
+            "name": "\u6536\u76d8\u4ef7",
+            "min": "dataMin",
+            "splitLine": {
+                "show": false
+            },
+            "minInterval": 100,
+            "type": "value",
+            "max": "dataMax"
+        },
+        {
+            "interval": 10,
+            "name": "\u6e29\u5ea6",
+            "scale": true,
+            "splitArea": {
+                "show": true
+            },
+            "min": 0,
+            "max": 100
+        }
+    ],
     "xAxis": {
+        "splitNumber": 40,
+        "boundaryGap": false,
+        "type": "category",
+        "scale": true,
+        "splitLine": {
+            "show": false
+        },
+        "min": "dataMin",
+        "axisLine": {
+            "onZero": false
+        },
         "data": [
             "2013-07-15",
             "2013-07-16",
@@ -2012,59 +2081,35 @@ var option_e500c9a00bf1436bbb3de5c04e6eca9d = {
             "2021-09-09",
             "2021-09-10"
         ],
-        "max": "dataMax",
-        "type": "category",
-        "splitNumber": 40,
-        "splitLine": {
-            "show": false
-        },
-        "scale": true,
-        "axisLine": {
-            "onZero": false
-        },
-        "min": "dataMin",
-        "boundaryGap": false
-    },
-    "grid": {
-        "bottom": "15%",
-        "left": "10%",
-        "right": "10%"
-    },
-    "title": {
-        "left": 200,
-        "textAlign": "center",
-        "top": 10,
-        "text": "\u8bc1\u5238\u516c\u53f8(399975)"
-    },
-    "legend": {
-        "data": [
-            "\u6536\u76d8\u70b9\u4f4d",
-            "\u7edd\u5bf9\u6e29\u5ea6",
-            "\u76f8\u5bf9\u6e29\u5ea6",
-            "\u5e73\u5747\u6e29\u5ea6"
-        ]
-    },
-    "tooltip": {
-        "trigger": "axis"
+        "max": "dataMax"
     },
     "toolbox": {
+        "right": 50,
+        "orient": "vertical",
         "feature": {
+            "dataZoom": {
+                "yAxisIndex": true
+            },
             "brush": {
                 "type": [
                     "lineX",
                     "clear"
                 ]
-            },
-            "dataZoom": {
-                "yAxisIndex": true
             }
         },
-        "orient": "vertical",
-        "right": 50,
         "top": 60
     },
     "series": [
         {
+            "lineStyle": {
+                "width": 3
+            },
+            "type": "line",
+            "name": "\u6536\u76d8\u70b9\u4f4d",
+            "showSymbol ": false,
+            "yAxisIndex": 0,
+            "symbol": "none",
+            "smooth": true,
             "data": [
                 541.3329,
                 543.9425,
@@ -4059,18 +4104,18 @@ var option_e500c9a00bf1436bbb3de5c04e6eca9d = {
                 915.85,
                 926.57
             ],
-            "symbol": "none",
-            "type": "line",
-            "name": "\u6536\u76d8\u70b9\u4f4d",
-            "color": "#000000",
-            "yAxisIndex": 0,
-            "lineStyle": {
-                "width": 3
-            },
-            "smooth": true,
-            "showSymbol ": false
+            "color": "#000000"
         },
         {
+            "lineStyle": {
+                "width": 1.5
+            },
+            "type": "line",
+            "name": "\u7edd\u5bf9\u6e29\u5ea6",
+            "showSymbol ": false,
+            "yAxisIndex": 1,
+            "symbol": "none",
+            "smooth": true,
             "data": [
                 0.0,
                 50.0,
@@ -6065,18 +6110,18 @@ var option_e500c9a00bf1436bbb3de5c04e6eca9d = {
                 11.6,
                 12.74
             ],
-            "symbol": "none",
-            "type": "line",
-            "name": "\u7edd\u5bf9\u6e29\u5ea6",
-            "color": "#c23531",
-            "yAxisIndex": 1,
+            "color": "#c23531"
+        },
+        {
             "lineStyle": {
                 "width": 1.5
             },
+            "type": "line",
+            "name": "\u76f8\u5bf9\u6e29\u5ea6",
+            "showSymbol ": false,
+            "yAxisIndex": 1,
+            "symbol": "none",
             "smooth": true,
-            "showSymbol ": false
-        },
-        {
             "data": [
                 0.0,
                 50.0,
@@ -8071,18 +8116,18 @@ var option_e500c9a00bf1436bbb3de5c04e6eca9d = {
                 80.84,
                 84.06
             ],
-            "symbol": "none",
-            "type": "line",
-            "name": "\u76f8\u5bf9\u6e29\u5ea6",
-            "color": "#006400",
-            "yAxisIndex": 1,
+            "color": "#006400"
+        },
+        {
             "lineStyle": {
                 "width": 1.5
             },
+            "type": "line",
+            "name": "\u5e73\u5747\u6e29\u5ea6",
+            "showSymbol ": false,
+            "yAxisIndex": 1,
+            "symbol": "none",
             "smooth": true,
-            "showSymbol ": false
-        },
-        {
             "data": [
                 0.0,
                 50.0,
@@ -10077,18 +10122,18 @@ var option_e500c9a00bf1436bbb3de5c04e6eca9d = {
                 46.22,
                 48.4
             ],
-            "symbol": "none",
-            "type": "line",
-            "name": "\u5e73\u5747\u6e29\u5ea6",
-            "color": "#FFD306",
-            "yAxisIndex": 1,
-            "lineStyle": {
-                "width": 1.5
-            },
-            "smooth": true,
-            "showSymbol ": false
+            "color": "#FFD306"
         },
         {
+            "lineStyle": {
+                "width": 0
+            },
+            "type": "line",
+            "name": "PB",
+            "showSymbol ": false,
+            "yAxisIndex": 1,
+            "symbol": "none",
+            "smooth": true,
             "data": [
                 1.89,
                 1.901,
@@ -12083,18 +12128,18 @@ var option_e500c9a00bf1436bbb3de5c04e6eca9d = {
                 2.003,
                 2.026
             ],
-            "symbol": "none",
-            "type": "line",
-            "name": "PB",
-            "color": "#FCFCFC",
-            "yAxisIndex": 1,
+            "color": "#FCFCFC"
+        },
+        {
             "lineStyle": {
                 "width": 0
             },
+            "type": "line",
+            "name": "PE",
+            "showSymbol ": false,
+            "yAxisIndex": 1,
+            "symbol": "none",
             "smooth": true,
-            "showSymbol ": false
-        },
-        {
             "data": [
                 35.839,
                 36.013,
@@ -14089,18 +14134,18 @@ var option_e500c9a00bf1436bbb3de5c04e6eca9d = {
                 21.902,
                 22.154
             ],
-            "symbol": "none",
-            "type": "line",
-            "name": "PE",
-            "color": "#FCFCFC",
-            "yAxisIndex": 1,
+            "color": "#FCFCFC"
+        },
+        {
             "lineStyle": {
                 "width": 0
             },
+            "type": "line",
+            "name": "ROE",
+            "showSymbol ": false,
+            "yAxisIndex": 1,
+            "symbol": "none",
             "smooth": true,
-            "showSymbol ": false
-        },
-        {
             "data": [
                 0.053,
                 0.053,
@@ -16095,18 +16140,18 @@ var option_e500c9a00bf1436bbb3de5c04e6eca9d = {
                 0.091,
                 0.091
             ],
-            "symbol": "none",
-            "type": "line",
-            "name": "ROE",
-            "color": "#FCFCFC",
-            "yAxisIndex": 1,
+            "color": "#FCFCFC"
+        },
+        {
             "lineStyle": {
                 "width": 0
             },
+            "type": "line",
+            "name": "V_PB",
+            "showSymbol ": false,
+            "yAxisIndex": 1,
+            "symbol": "none",
             "smooth": true,
-            "showSymbol ": false
-        },
-        {
             "data": [
                 0.436,
                 0.435,
@@ -18101,18 +18146,18 @@ var option_e500c9a00bf1436bbb3de5c04e6eca9d = {
                 1.037,
                 1.037
             ],
-            "symbol": "none",
-            "type": "line",
-            "name": "V_PB",
-            "color": "#FCFCFC",
-            "yAxisIndex": 1,
+            "color": "#FCFCFC"
+        },
+        {
             "lineStyle": {
                 "width": 0
             },
+            "type": "line",
+            "name": "10\u56fd\u503a%",
+            "showSymbol ": false,
+            "yAxisIndex": 1,
+            "symbol": "none",
             "smooth": true,
-            "showSymbol ": false
-        },
-        {
             "data": [
                 3.61,
                 3.619,
@@ -20107,56 +20152,11 @@ var option_e500c9a00bf1436bbb3de5c04e6eca9d = {
                 NaN,
                 NaN
             ],
-            "symbol": "none",
-            "type": "line",
-            "name": "10\u56fd\u503a%",
-            "color": "#FCFCFC",
-            "yAxisIndex": 1,
-            "lineStyle": {
-                "width": 0
-            },
-            "smooth": true,
-            "showSymbol ": false
-        }
-    ],
-    "yAxis": [
-        {
-            "max": "dataMax",
-            "type": "value",
-            "minInterval": 100,
-            "splitLine": {
-                "show": false
-            },
-            "name": "\u6536\u76d8\u4ef7",
-            "min": "dataMin"
-        },
-        {
-            "splitArea": {
-                "show": true
-            },
-            "max": 100,
-            "name": "\u6e29\u5ea6",
-            "scale": true,
-            "min": 0,
-            "interval": 10
-        }
-    ],
-    "dataZoom": [
-        {
-            "start": 90,
-            "type": "inside",
-            "end": 100
-        },
-        {
-            "show": true,
-            "start": 90,
-            "type": "slider",
-            "y": "90%",
-            "end": 100
+            "color": "#FCFCFC"
         }
     ]
 };
-myChart_e500c9a00bf1436bbb3de5c04e6eca9d.setOption(option_e500c9a00bf1436bbb3de5c04e6eca9d);
+myChart_9de0111156544bdda90aabd5b346068a.setOption(option_9de0111156544bdda90aabd5b346068a);
 
 </script>
 </body>
